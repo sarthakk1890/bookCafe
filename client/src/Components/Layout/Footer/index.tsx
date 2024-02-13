@@ -60,6 +60,18 @@ const Footer:React.FC = () => {
             <hr />
             <div className="copyRight">
                 <p>©Copyright. All rights reserved</p>
+                <p>This website is made by <em><b>Sarthak Singh</b></em></p>
+                <div className="social-btns sarthakLinks">
+                    <Link className="btn linkedin" to="https://www.linkedin.com/in/sarthak-singh-38261b225/" target="_blank">
+                        <i className="fa fa-linkedin"></i>
+                    </Link>
+                    <Link className="btn github" to="https://github.com/sarthakk1890" target="_blank">
+                        <i className="fa fa-github"></i>
+                    </Link>
+                    <Link className="btn envelope" to="mailto:144singhsarthak@gmail.com">
+                        <i className="fa fa-envelope"></i>
+                    </Link>
+                </div>
             </div>
 
         </div>
