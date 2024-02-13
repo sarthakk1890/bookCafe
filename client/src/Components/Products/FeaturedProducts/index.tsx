@@ -3,6 +3,7 @@ import './style.scss';
 import ProductCard from '../ProductCard';
 import { useGetFeaturedProductsQuery } from '../../../redux/api/productAPI';
 import { Products } from '../../../types/types';
+import { CircularProgress } from '@mui/material';
 
 const FeaturedProducts: React.FC = () => {
   const { data } = useGetFeaturedProductsQuery("");
@@ -14,9 +15,12 @@ const FeaturedProducts: React.FC = () => {
     <section id="featured_products">
       <h1>Featured Books</h1>
       <div>
-        {topSixProducts?.map((product: Products, index: number) => (
-          <ProductCard key={index} product={product} />
-        ))}
+        {
+          isLoading ? <CircularProgress /> :
+            topSixProducts?.map((product, index) => (
+              <ProductCard key={index} product={product} />
+            ))
+        }
       </div>
     </section>
   );
