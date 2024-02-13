@@ -1,0 +1,192 @@
+@import "../../../colors.scss";
+
+.cart {
+  padding-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  >h1 {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 5px;
+    color: $reddark;
+  }
+
+  >div {
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >.cartSection-1 {
+      width: 60%;
+
+      >.cartSection-1-1 {
+        border-top: 2px solid rgba(0, 0, 0, 0.278);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.278);
+        width: 100%;
+      }
+
+      >.cartSection-1-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2.6rem;
+        padding-right: 1rem;
+        margin-top: 20px;
+
+        >h4 {
+          font-family: "Nunito", sans-serif;
+        }
+      }
+    }
+
+    >.cartSection-2 {
+      align-self: flex-start;
+      padding: 2rem;
+      margin-left: 5rem;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .checkout {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      >div {
+        display: flex;
+        justify-content: space-between;
+
+        >.delivery-1 {
+          >div {
+            padding-top: 10px;
+            display: flex;
+            font-size: 0.9rem;
+            gap: 5px;
+            align-items: center;
+          }
+        }
+
+        >a {
+          background-color: $red;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          text-align: center;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .emptyCart{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    > img{
+      width: 30vw;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .emptyCart > img{
+      width: 50vw;
+    }
+  }
+
+}
+
+.cartItem {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+
+  >.cartProductContainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  >div {
+    >h4 {
+      font-family: "Nunito", sans-serif;
+      text-transform: uppercase;
+    }
+
+    >input[type="number"] {
+      text-align: center;
+      max-width: 2rem;
+      height: 2rem;
+      padding: 0.5rem;
+      border: none;
+      margin: 0.25rem;
+      outline: none;
+      border-radius: 5px;
+      color: $red;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    >button {
+      cursor: pointer;
+      border: none;
+      padding: 0.5rem;
+      background-color: $dark;
+      color: white;
+      border-radius: 5px;
+    }
+
+    >img {
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cart {
+    font-size: 12px;
+
+    >div {
+      flex-direction: column;
+      padding: 10px;
+
+      >.cartSection-1 {
+        width: 100%;
+      }
+
+      >.cartSection-2 {
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+
+        >div>div>div>p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .cartItem {
+    >div>img {
+      height: 100px;
+    }
+  }
+}

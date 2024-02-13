@@ -1,0 +1,105 @@
+@import "../../../colors.scss";
+
+.orderDetails {
+  background-color: $pink;
+  width: 100%;
+  padding-top: 3rem;
+
+  > main {
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    overflow-x: auto;
+    > h1 {
+      text-transform: uppercase;
+      text-align: center;
+      font: 200 3rem "Roboto";
+      margin: 3rem;
+    }
+
+    > div {
+      margin: 2rem 0;
+      text-align: center;
+      > h1 {
+        text-decoration: underline;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+
+      > p {
+        font-weight: 200;
+        white-space: nowrap;
+        letter-spacing: 2px;
+        margin: 2rem;
+        > b {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    > article {
+      > h1 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin: 2rem 0;
+      }
+
+      > div {
+        background-color: rgb(246, 246, 246);
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-radius: 5px;
+        > h4 {
+          font-weight: 200;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .orderDetails {
+    padding-top: 2rem;
+    > main {
+      > h1 {
+        font-size: 2rem;
+      }
+
+      > div {
+        > h1 {
+          font-size: 1rem;
+        }
+        > p {
+          letter-spacing: 1px;
+          font-size: 0.8rem;
+          margin: 2rem 0;
+        }
+      }
+
+      > article {
+        > h1 {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+
+        > div {
+          > h4 {
+            font-size: 0.9rem;
+          }
+          > div {
+            > span {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

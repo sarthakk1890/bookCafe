@@ -1,0 +1,115 @@
+.store-main {
+  min-height: 100dvh;
+}
+
+.productsHeading>h2 {
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 2vmax "Roboto";
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.products {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 30vh;
+
+  >p {
+    font-size: 2vmax;
+    color: rgba(0, 0, 0, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.paginationBox {
+  margin-block-end: 50px;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 12vmax;
+  left: 2vmax;
+}
+
+.filterBox-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterBox-2 {
+  padding-block-end: 30px;
+}
+
+.subHead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  color: rgba(0, 0, 0, 0.678);
+  width: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.genreDrop {
+  margin: 10px 0px 20px;
+}
+
+.reset-rating {
+  padding: 7px;
+  margin: 10px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.reset-rating:hover {
+  background-color: rgb(192, 59, 35);
+}
+
+@media screen and (max-width: 1000px) {
+  .productsHeading {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >h2 {
+      width: 40%;
+      text-align: center;
+      font-size: 3vmax;
+    }
+  }
+
+  .products {
+    width: 100vw;
+  }
+
+  .filterBox {
+    width: 30vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .filterBox-1,
+  .filterBox-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}

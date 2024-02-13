@@ -1,0 +1,8 @@
+node_modules/
+book_images/
+dist/
+
+*/client/node_modules/
+*/server/node_modules/
+
+*/client/*.env

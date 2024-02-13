@@ -1,0 +1,22 @@
+.loading {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFF;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+}
+
+.loading > div{
+    width: 10vmax;
+    height: 10vmax;
+    border-bottom: 5px solid rgb(23, 1, 79);
+    border-radius: 50%;
+    animation: loadAni 800ms linear infinite;
+}
+
+@keyframes loadAni{
+    to{
+        transform: rotateZ(-360deg);
+    }
+}

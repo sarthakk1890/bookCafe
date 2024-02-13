@@ -1,0 +1,53 @@
+.allUsers {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: fixed;
+  z-index: 21;
+  padding-top: 0;
+
+  thead,
+  tbody {
+    >tr {
+      font-size: 1vmax;
+    }
+  }
+
+  >main {
+    width: 100%;
+    padding-top: 6rem;
+
+    .userActionBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 20px;
+
+      >button {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .allUsers {
+    padding-top: 0;
+    grid-template-columns: 1fr;
+
+    thead,
+    tbody {
+      >tr {
+        font-size: 2vmax;
+      }
+    }
+
+    >main {
+      padding-top: 0;
+    }
+  }
+}
