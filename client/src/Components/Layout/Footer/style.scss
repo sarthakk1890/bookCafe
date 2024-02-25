@@ -129,6 +129,14 @@
 	color: #e95950;
 }
 
+.social-btns .btn.envelope:before{
+	background-color: #D73B3E;
+}
+
+.social-btns .btn.envelope .fa{
+	color: #D73B3E;
+}
+
 .social-btns .btn:focus:before, .social-btns .btn:hover:before{
 	top: -10%;
 	left: -10%;
@@ -179,6 +187,7 @@ hr{
 
 .copyRight{
 	text-align: center;
+	text-wrap: wrap;
 }
 
 .underline{
@@ -203,6 +212,18 @@ hr{
 	top: 0;
 	left: 10px;
 	animation: moving 1.5s linear infinite;
+}
+
+.sarthakLinks{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 5px;
+
+		.btn .fa{
+		transform: scale(0.7);
+	}
 }
 
 @keyframes moving{
