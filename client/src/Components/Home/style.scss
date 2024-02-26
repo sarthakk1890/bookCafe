@@ -1,24 +1,24 @@
 @import '../../colors.scss';
 
-.home{
+.home {
     height: 100vh;
     overflow-x: hidden;
 
-    div{
+    div {
         padding-left: 8rem;
         padding-top: 20rem;
 
-        >h1{
+        >h1 {
             font-size: 4rem;
             text-transform: uppercase;
         }
 
-        > p{
+        >p {
             font-size: 1.2rem;
         }
     }
 
-    > a{
+    >a {
         display: block;
         margin: 2rem 8rem;
         width: 10rem;
@@ -31,12 +31,12 @@
         padding: 1rem;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             background-color: $reddark;
         }
     }
 
-    &::before{
+    &::before {
         content: "";
         width: 100%;
         height: 100%;
@@ -50,15 +50,20 @@
     }
 }
 
-@media screen and (max-width: 650px){
-    .home{
-        > div{
+@media screen and (max-width: 650px) {
+    .home {
+        >div {
             text-align: center;
             padding-top: 40vh;
             padding-left: 0;
         }
-        > a{
+
+        >a {
             margin: 2rem auto;
+        }
+
+        &::before {
+            background-position: left top;
         }
     }
 }

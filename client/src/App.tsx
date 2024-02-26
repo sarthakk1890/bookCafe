@@ -37,6 +37,7 @@ import { getUser } from './redux/api/userAPI.js'
 import { UserReducerInitialState } from './types/reducer-types.js'
 import Loader from './Components/Layout/Loader/index.js'
 import UpdateProduct from './Components/Admin/UpdateProduct/index.js'
+import About from './Components/AboutUs/index.js'
 
 
 function ScrollToTop() {
@@ -107,6 +108,7 @@ function App() {
             <Route path="/search" element={<Search />} />
             <Route path="/password/forgot" element={<ForgotPassword />} />
             <Route path='/password/reset/:token' element={<ResetPassword />} />
+            <Route path='/about-us' element={<About />} />
 
             <Route element={<ProtectedRoute adminOnly={true} admin={user?.role === "admin"} isAuthenticated={user ? true : false} />}>
               <Route path="/admin/user/:id" element={<UpdateUser />} />

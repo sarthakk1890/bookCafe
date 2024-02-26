@@ -137,6 +137,14 @@
 	color: #D73B3E;
 }
 
+.social-btns .btn.whatsapp:before{
+	background-color: #25D366;
+}
+
+.social-btns .btn.whatsapp .fa{
+	color: #25D366;
+}
+
 .social-btns .btn:focus:before, .social-btns .btn:hover:before{
 	top: -10%;
 	left: -10%;

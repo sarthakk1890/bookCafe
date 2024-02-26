@@ -7,15 +7,15 @@ import { BsHourglassSplit } from 'react-icons/bs'
 const Conatct: React.FC = () => {
 
   const option = {
-    initial:{
+    initial: {
       x: "-100%",
       opacity: 0
     },
-    whileInView:{
+    whileInView: {
       x: 0,
       opacity: 1
     },
-    transition:{
+    transition: {
       delay: 0.3
     }
   }
@@ -27,37 +27,33 @@ const Conatct: React.FC = () => {
       <div className="contact-1">
         <div>
           <h3><MdCall /> Call Us</h3>
-          <motion.p
-          {...option}
-          >+91 8987654298</motion.p>
+          <motion.p {...option}>+91 9389603522</motion.p>
         </div>
         <div>
           <h3><MdLocationPin /> Location</h3>
-          <motion.p
-          {...option}
-          >Random Street abn msj</motion.p>
+          <motion.p {...option}>Sangamner, Maharashtra 422608</motion.p>
         </div>
         <div>
           <h3><BsHourglassSplit /> Business Hours</h3>
           <motion.p
-          {...option}
-          >07:00 to 22:00</motion.p>
+            {...option}
+          >09:00 to 18:00</motion.p>
         </div>
       </div>
 
       <div className="contact-2">
-        <motion.form 
-        initial={{
-          y: "-100%",
-          opacity: 0
-        }}
-        whileInView={{
-          y: 0,
-          opacity: 1
-        }}
-        transition={{
-          delay: 0.1
-        }}
+        <motion.form
+          initial={{
+            y: "-100%",
+            opacity: 0
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1
+          }}
+          transition={{
+            delay: 0.1
+          }}
         >
 
           <h2>Contact Us</h2>

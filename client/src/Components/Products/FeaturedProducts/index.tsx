@@ -2,11 +2,10 @@ import React from 'react';
 import './style.scss';
 import ProductCard from '../ProductCard';
 import { useGetFeaturedProductsQuery } from '../../../redux/api/productAPI';
-import { Products } from '../../../types/types';
 import { CircularProgress } from '@mui/material';
 
 const FeaturedProducts: React.FC = () => {
-  const { data } = useGetFeaturedProductsQuery("");
+  const { data, isLoading } = useGetFeaturedProductsQuery("");
 
   // Check if data and products are defined before sorting
   const topSixProducts = data?.products
