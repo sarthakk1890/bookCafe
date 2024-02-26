@@ -65,9 +65,9 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, isAdmin }) => {
       </Link>
       <motion.div {...option} className={`nav-list ${menuVisible ? 'hidden' : ''}`}>
         <Link to='/' onClick={handleLinkClick}>Home</Link>
+        <Link to='/store' onClick={handleLinkClick}>Store</Link>
         <Link to='/contact' onClick={handleLinkClick}>Contact Us</Link>
         <Link to='/about-us' onClick={handleLinkClick}>About Us</Link>
-        <Link to='/store' onClick={handleLinkClick}>Store</Link>
         <Link to='/admin/dashboard' onClick={handleLinkClick} style={{ display: isAdmin ? "" : "none" }}>Dashboard</Link>
         <Link to='/search' onClick={handleLinkClick}><IoSearchSharp /></Link>
         <Link to='/cart' onClick={handleLinkClick}><MdOutlineShoppingCart /></Link>
