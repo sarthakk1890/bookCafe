@@ -4,10 +4,17 @@ import './style.scss'
 import { motion } from 'framer-motion'
 import { useDispatch } from 'react-redux'
 import { resetCart } from '../../../redux/reducer/cartReducer'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const PaymentSuccess: React.FC = () => {
 
   const dispatch = useDispatch();
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/orders/${id}`)
+  }
 
   useEffect(() => {
     dispatch(resetCart());
@@ -31,7 +38,7 @@ const PaymentSuccess: React.FC = () => {
 
         <div className="center">
           <p>Order Placed Successfully !!</p>
-          <button>Check Status</button>
+          <button onClick={handleClick}>Check Status</button>
         </div>
 
       </main>

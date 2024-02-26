@@ -50,12 +50,13 @@ const PaymentMode: React.FC = () => {
 
             try {
                 const { data } = await codOrder(requestBody);
+                const statusId = data.savedOrder._id;
 
                 toast.success(data.message, {
                     autoClose: 2000
                 })
 
-                navigate('/paymentSuccess')
+                navigate(`/paymentSuccess/${statusId}`)
 
             } catch (error) {
                 toast.error(`Error occurred while placing order: ${error}`, {
@@ -101,12 +102,13 @@ const PaymentMode: React.FC = () => {
                     };
 
                     const { data } = await paymentVerification(requestBody);
+                    const statusId = data.savedOrder._id;
 
                     toast.success("Order placed successfully", {
                         autoClose: 2000
                     })
 
-                    navigate('/paymentSuccess')
+                    navigate(`/paymentSuccess/${statusId}`)
 
                 },
                 theme: {

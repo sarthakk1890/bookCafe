@@ -27,7 +27,7 @@ const Conatct: React.FC = () => {
       <div className="contact-1">
         <div>
           <h3><MdCall /> Call Us</h3>
-          <motion.p {...option}>+91 9389603522</motion.p>
+          <motion.p {...option}>+91 7588535092</motion.p>
         </div>
         <div>
           <h3><MdLocationPin /> Location</h3>

@@ -123,7 +123,7 @@ function App() {
             <Route element={<ProtectedRoute adminOnly={false} isAuthenticated={user ? true : false} />}>
               <Route path="/shipping" element={<Shipping />} />
               <Route path="/paymentMode" element={<PaymentMode />} />
-              <Route path="/paymentSuccess" element={<PaymentSuccess />} />
+              <Route path="/paymentSuccess/:id" element={<PaymentSuccess />} />
               <Route path='/password/update' element={<UpdatePassword />} />
               <Route path='/me/update' element={<UpdateProfile />} />
               <Route path="/me" element={<Profile />} />

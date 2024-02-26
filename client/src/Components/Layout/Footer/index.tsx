@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     <p>Sangamner</p>
                     <p>Maharashtra 422608</p>
                     <p className="email-id">144.book.cafe@gmail.com</p>
-                    <h4>+91 9389603522</h4>
+                    <h4>+91 7588535092</h4>
                 </div>
 
                 <div className="col">
