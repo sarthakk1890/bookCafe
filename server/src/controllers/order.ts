@@ -118,7 +118,7 @@ export const paymentVerification = TryCatch(async (req: Request, res: Response, 
             razorpay_signature
         });
 
-        const savedORder = await Order.create({
+        const savedOrder = await Order.create({
             ...orderOptions,
             paidAt: new Date(Date.now()),
             paymentInfo: payment._id,
@@ -126,7 +126,7 @@ export const paymentVerification = TryCatch(async (req: Request, res: Response, 
 
         res.status(201).json({
             success: true,
-            savedORder,
+            savedOrder,
             message: `Order Placed Successfully. Payment ID: ${payment._id}`
         })
     }
