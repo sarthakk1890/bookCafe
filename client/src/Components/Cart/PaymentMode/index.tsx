@@ -102,13 +102,14 @@ const PaymentMode: React.FC = () => {
                     };
 
                     const { data } = await paymentVerification(requestBody);
-                    const statusId = data.savedOrder._id;
+                    console.log(data);
+                    // const statusId = data.savedOrder._id;
 
                     toast.success("Order placed successfully", {
                         autoClose: 2000
                     })
 
-                    navigate(`/paymentSuccess/${statusId}`)
+                    // navigate(`/paymentSuccess/${statusId}`)
 
                 },
                 theme: {
