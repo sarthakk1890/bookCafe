@@ -3,7 +3,6 @@ import './style.scss';
 import { Dialog, DialogActions, DialogContent, DialogTitle, Button } from '@mui/material';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
-// import Image from '../../../assets/test_book1.jpg';
 import { useParams } from 'react-router-dom';
 import { useAddReviewMutation, useGetSingleProductQuery } from '../../../redux/api/productAPI';
 import ReviewCard from '../ReviewCard';

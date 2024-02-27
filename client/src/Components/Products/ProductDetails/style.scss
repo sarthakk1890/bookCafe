@@ -1,11 +1,10 @@
 .productDetails {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: row;
   max-width: 100%;
   padding: 6vmax;
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 .productDetails > div {
@@ -35,6 +34,7 @@
 .detailsBlock-1 > p {
   color: rgb(54, 54, 54, 0.582);
   font: 200 0.6vmax "cursive";
+  margin-block: 5px;
 }
 
 .redColor{
@@ -139,6 +139,8 @@
 }
 
 .detailsBlock-4 > p {
+  margin-top: 10px;
+  text-align: justify;
   color: rgba(0, 0, 0, 0.534);
   font: 300 0.8vmax sans-serif;
 }
