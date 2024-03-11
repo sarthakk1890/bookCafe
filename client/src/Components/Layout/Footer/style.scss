@@ -1,5 +1,5 @@
-.footer{
-    background-color: #eef8ff;
+.footer {
+	background-color: #eef8ff;
 	background: linear-gradient(to right, #00093c, #2d0b00);
 	color: #fff;
 	padding: 50px 0 30px;
@@ -8,7 +8,11 @@
 	line-height: 20px;
 }
 
-.row{
+.text-justify {
+	text-align: justify;
+}
+
+.row {
 	width: 85%;
 	margin: auto;
 	display: flex;
@@ -17,47 +21,48 @@
 	justify-content: space-between;
 }
 
-.col{
+.col {
 	flex-basis: 25%;
 	padding: 25px;
 }
 
-.col>h3::-webkit-scrollbar{
+.col>h3::-webkit-scrollbar {
 	display: none;
 }
 
-.col:nth-child(2), .col:nth-child(3){
+.col:nth-child(2),
+.col:nth-child(3) {
 	flex-basis: 15%;
 }
 
-.col img{
+.col img {
 	width: 230px;
 	margin-bottom: 30px;
 }
 
-.col h3{
+.col h3 {
 	width: fit-content;
 	margin-bottom: 40px;
-	position: relative;	
+	position: relative;
 }
 
-.email-id{
+.email-id {
 	width: fit-content;
 	border-bottom: 1px solid #ccc;
 	margin: 20px 0px;
 }
 
-.col ul li{
+.col ul li {
 	list-style: none;
 	margin-bottom: 12px;
 }
 
-.col ul li a{
+.col ul li a {
 	text-decoration: none;
 	color: white;
 }
 
-.newsLetter{
+.newsLetter {
 	padding-bottom: 15px;
 	display: flex;
 	align-items: center;
@@ -66,12 +71,12 @@
 	margin-bottom: 50px;
 }
 
-.newsLetter .far{
+.newsLetter .far {
 	font-size: 18px;
 	margin-right: 10px;
 }
 
-.newsLetter input{
+.newsLetter input {
 	width: 80%;
 	background: transparent;
 	color: #ccc;
@@ -79,88 +84,94 @@
 	outline: none;
 }
 
-.newsLetter button{
+.newsLetter button {
 	background: transparent;
 	border: 0;
 	outline: none;
 	cursor: pointer;
 }
 
-.newsLetter button .fas{
+.newsLetter button .fas {
 	font-size: 16px;
-	color: #ccc; 
+	color: #ccc;
 }
 
 /* ---------------------------Icons--------------------------------------------- */
-.social-btns .btn, .social-btns .btn .fa, .social-btns .btn:before{
-	transition:  all .35s;
+.social-btns .btn,
+.social-btns .btn .fa,
+.social-btns .btn:before {
+	transition: all .35s;
 	transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
 
-.social-btns .btn:before{
+.social-btns .btn:before {
 	top: 90%;
 	left: -110%;
 }
 
-.social-btns .btn .fa{
+.social-btns .btn .fa {
 	transform: scale(0.8);
 }
-.social-btns .btn.linkedin:before{
+
+.social-btns .btn.linkedin:before {
 	background-color: #0e76a8;
 }
 
-.social-btns .btn.linkedin .fa{
+.social-btns .btn.linkedin .fa {
 	color: #48b2e2;
 }
 
-.social-btns .btn.github:before{
+.social-btns .btn.github:before {
 	background-color: #fff;
 }
 
-.social-btns .btn.github .fa{
+.social-btns .btn.github .fa {
 	color: #fff;
 }
 
-.social-btns .btn.instagram:before{
+.social-btns .btn.instagram:before {
 	background-color: #e95950;
 }
 
-.social-btns .btn.instagram .fa{
+.social-btns .btn.instagram .fa {
 	color: #e95950;
 }
 
-.social-btns .btn.envelope:before{
+.social-btns .btn.envelope:before {
 	background-color: #D73B3E;
 }
 
-.social-btns .btn.envelope .fa{
+.social-btns .btn.envelope .fa {
 	color: #D73B3E;
 }
 
-.social-btns .btn.whatsapp:before{
+.social-btns .btn.whatsapp:before {
 	background-color: #25D366;
 }
 
-.social-btns .btn.whatsapp .fa{
+.social-btns .btn.whatsapp .fa {
 	color: #25D366;
 }
 
-.social-btns .btn:focus:before, .social-btns .btn:hover:before{
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
 	top: -10%;
 	left: -10%;
 }
 
-.social-btns .btn:focus .fa, .social-btns .btn:hover .fa{
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
 	color: #fff;
 	transform: scale(1.0);
 }
 
-.social-btns .btn:focus .fa-github, .social-btns .btn:hover .fa-github{
+.social-btns .btn:focus .fa-github,
+.social-btns .btn:hover .fa-github {
 	color: #000;
 	transform: scale(1.0);
 }
 
-.social-btns .btn{
+.social-btns .btn {
 	text-align: center;
 	display: inline-block;
 	background-color: transparent;
@@ -173,32 +184,32 @@
 	opacity: 1;
 }
 
-.social-btns .btn:before{
+.social-btns .btn:before {
 	content: '';
-	width:  120%;
+	width: 120%;
 	height: 120%;
 	position: absolute;
 	transform: rotate(45deg);
 }
 
-.social-btns .btn .fa{
+.social-btns .btn .fa {
 	font-size: 25px;
 	vertical-align: middle;
 }
 
-hr{
+hr {
 	width: 90%;
 	border: 0;
 	border-bottom: 1px solid #ccc;
 	margin: 20px auto;
 }
 
-.copyRight{
+.copyRight {
 	text-align: center;
 	text-wrap: wrap;
 }
 
-.underline{
+.underline {
 	z-index: 17;
 	width: 100%;
 	height: 3px;
@@ -211,7 +222,7 @@ hr{
 	overflow: hidden;
 }
 
-.underline span{
+.underline span {
 	width: 15px;
 	height: 100%;
 	background: #fff;
@@ -222,47 +233,49 @@ hr{
 	animation: moving 1.5s linear infinite;
 }
 
-.sarthakLinks{
+.sarthakLinks {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
 	margin-top: 5px;
 
-		.btn .fa{
+	.btn .fa {
 		transform: scale(0.7);
 	}
 }
 
-@keyframes moving{
-	0%{
+@keyframes moving {
+	0% {
 		left: -20px;
 	}
-	100%{
+
+	100% {
 		left: 100%;
 	}
 }
 
 @media (max-width: 1038px) {
-	.col img{
+	.col img {
 		width: 150px;
 	}
 }
 
 @media (max-width: 700px) {
-	.footer{
+	.footer {
 		bottom: unset;
 	}
 
-	.col{
-		flex-basis: 100%;
-	}
-	
-	.col:nth-child(2), .col:nth-child(3){
+	.col {
 		flex-basis: 100%;
 	}
 
-	.col img{
+	.col:nth-child(2),
+	.col:nth-child(3) {
+		flex-basis: 100%;
+	}
+
+	.col img {
 		margin-inline-start: -3%;
 		width: 150px;
 	}

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 
                 <div className="col">
                     <img src={footerImg} alt="Book Cafe" />
-                    <p>
+                    <p className="text-justify">
                         Book Cafe is your destination for affordable literary adventures. We believe in the power of books to inspire and enrich lives, which is why we offer a wide selection of titles for rent at budget-friendly prices.
                     </p>
                 </div>
