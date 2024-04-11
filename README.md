@@ -9,7 +9,7 @@ To get started with BookCafe, follow these steps:
 1. Clone this repository to your local machine:
 
 ```
-git clone <repository-url>
+git clone https://github.com/sarthakk1890/bookCafe.git
 ```
 
 2. Navigate to the project directory:
@@ -39,6 +39,7 @@ To run the server, use the following command:
 
 ```
 npm run build
+node dist/app.js
 ```
 
 ### Running the Client
