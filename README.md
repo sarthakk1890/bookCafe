@@ -1,6 +1,7 @@
 # BookCafe Project
 
 Welcome to BookCafe! BookCafe is a project aimed at creating a digital platform for book enthusiasts to share their favorite reads, discover new titles, and engage in discussions.
+Check out hosted project: [Book Cafe](https://boookcafe.netlify.app/)
 
 ## Installation
 
